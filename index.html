@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+        <button id="add-book">Add Book</button>
+    </header>
+    <div id="modal" class="modal">
+        <form id="button-form" class="modal-content">
+            <div id="title" class="input">
+                <label for="title-input">Title:</label>
+                <input type="text" id="title-input" name="title" placeholder="1984">
+            </div>
+            <div id="author" class="input">
+                <label for="author-input">Author:</label>
+                <input type="text" id="author-input"  placeholder="George Orwell">
+            </div>
+            <div id="pages" class="input">
+                <label for="pages-input">Number of Pages:</label>
+                <input type="number" id="pages-input" placeholder="328">
+            </div>
+            <div id="checkbox">
+                <!-- Rounded switch -->
+                <p>Unread</p>
+                <label class="switch" for="checkbox-input">              
+                        <input type="checkbox" id="checkbox-input">
+                        <span class="slider round"></span>
+                </label>
+                <input type="hidden" id="book-index">
+                <p>Read</p>
+            </div>
+            <button type="submit" id="submit" class="close">Submit</button>
+        </form>
+    </div>
+    <div class="books-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
